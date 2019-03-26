@@ -128,3 +128,37 @@ body{
 		padding:10px 0 0 10px;
 	}
 }
+
+
+/*min profil follow*/
+.minprofil{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 100px;
+	background-color: #E5DDCE;
+	grid-column: span 12;}
+
+.kontonavn{
+	grid-column: 2/6;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.Profilbillede{
+	grid-column: 3/3;
+	width: 40px;
+	
+}
+.follow{
+	grid-column: 8/11;
+	height: 30px;
+	margin-top: 10px;
+	background-color: #3F6648;
+	border: 0;
+	color: white;
+}
+.antaljokes{
+	grid-column: 7/7;
+	
+}
+
+

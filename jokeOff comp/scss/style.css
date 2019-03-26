@@ -4,22 +4,30 @@
 
 body {
   background-color: #FB6A6A;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
 
-.menu {
-  font-family: 'roboto';
+.divider {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 20px 0; }
+
+.menu, .menu2 {
+  grid-column: span 12;
+  font-family: "Roboto";
   font-weight: 400;
-  width: 100vw;
   height: 45px;
   background-color: #545454; }
 
-.menu__list {
-  width: 100%;
+.menu__list, .menu2__list {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
-.menu__listItem {
+.menu__listItem, .menu2__listItem {
   display: inline-block;
   text-align: center;
   line-height: 45px;
@@ -27,7 +35,85 @@ body {
   color: #848484;
   cursor: pointer; }
 
-.menu--active {
+.menu--active, .menu2--active {
   color: white; }
+
+.menu__listItem {
+  box-sizing: border-box; }
+
+.menu--active {
+  box-shadow: inset 0 -5px 0 #0B0B0B; }
+
+.menu2--active {
+  background-color: #424242; }
+
+.jokeContainer {
+  min-height: 200px;
+  grid-column: span 12; }
+  .jokeContainer .jokeContainer__header {
+    width: 100%;
+    height: 50px;
+    background-color: #6188D7; }
+  .jokeContainer .jokeContainer__joke {
+    padding: 10px 10px;
+    min-height: 200px;
+    background-color: #7CA6FB;
+    white-space: pre-line;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    color: #E5E5E5; }
+  .jokeContainer .jokeContainer__footer {
+    width: 100%;
+    height: 50px;
+    background-color: #6188D7; }
+  .jokeContainer .jokeContainer__avatar {
+    height: 30px;
+    padding: 10px 0 0 10px; }
+  .jokeContainer .jokeContainer__username {
+    display: inline-block;
+    vertical-align: top;
+    color: #E5E5E5;
+    line-height: 50px;
+    font-size: 1.1rem; }
+  .jokeContainer .jokeContainer__crown {
+    display: inline-block;
+    width: 20px;
+    vertical-align: top;
+    margin-top: 15px; }
+  .jokeContainer .jokeContainer__menu {
+    width: 25px;
+    float: right;
+    margin: 10px 25px 0 0; }
+  .jokeContainer .jokeContainer__like {
+    width: 30px;
+    padding: 10px 0 0 10px; }
+
+/*min profil follow*/
+.minprofil {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100px;
+  background-color: #E5DDCE;
+  grid-column: span 12; }
+
+.kontonavn {
+  grid-column: 2/6;
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.Profilbillede {
+  grid-column: 3/3;
+  width: 40px; }
+
+.follow {
+  grid-column: 8/11;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #3F6648;
+  border: 0;
+  color: white; }
+
+.antaljokes {
+  grid-column: 6/7; }
 
 /*# sourceMappingURL=style.css.map */
