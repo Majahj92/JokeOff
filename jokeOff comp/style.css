@@ -10,9 +10,13 @@ ul {
   
 ul li img {
  height: 20px;
+ display: block;
+ margin: 0 auto;
+ margin-top: 10px;
+ margin-bottom: 10px;
 }
 
-.home_line, .search_line, .add_line, .notification_line, .profile_line {
+.bundmenu__link {
 display: block;
 margin: 0 auto;
 }
