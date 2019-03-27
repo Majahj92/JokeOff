@@ -55,7 +55,7 @@ body {
     height: 50px;
     background-color: #6188D7; }
   .jokeContainer .jokeContainer__joke {
-    padding: 10px 10px;
+    padding: 10px 10px 10px 15px;
     min-height: 200px;
     background-color: #7CA6FB;
     white-space: pre-line;
@@ -68,7 +68,7 @@ body {
     background-color: #6188D7; }
   .jokeContainer .jokeContainer__avatar {
     height: 30px;
-    padding: 10px 0 0 10px; }
+    padding: 10px 0 0 15px; }
   .jokeContainer .jokeContainer__username {
     display: inline-block;
     vertical-align: top;
@@ -83,9 +83,50 @@ body {
   .jokeContainer .jokeContainer__menu {
     width: 25px;
     float: right;
-    margin: 10px 25px 0 0; }
+    margin: 10px 15px 0 0; }
   .jokeContainer .jokeContainer__like {
     width: 30px;
-    padding: 10px 0 0 10px; }
+    padding: 10px 0 0 15px; }
+
+.writeJoke {
+  grid-column: 1/13;
+  height: 250px;
+  border: none;
+  margin: 25px 15px;
+  resize: none; }
+
+.jokeKategori, .jokeInput {
+  border: none;
+  height: 35px;
+  background-color: white; }
+
+.jokeKategori {
+  grid-column: 1/5;
+  margin-left: 15px; }
+
+.jokeInput {
+  grid-column: 9/13;
+  margin-right: 15px; }
+
+.searchForm {
+  position: relative;
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  height: 45px;
+  background-color: #545454; }
+  .searchForm .searchForm__input {
+    margin: 10px 15px 0 0;
+    height: 25px;
+    border: none; }
+  .searchForm .searchForm__icon {
+    margin: 10px 0 0 15px;
+    padding: 5px 5px;
+    height: 15px;
+    background-color: white; }
+  .searchForm .searchForm__list {
+    position: absolute;
+    top: 40px;
+    background-color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

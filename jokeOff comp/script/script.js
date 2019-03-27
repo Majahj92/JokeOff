@@ -1,19 +1,3 @@
-// Tage fat i alle menu links
-let allMenuLinks = document.querySelectorAll('.menu__listItem'); 
-
-//lykke - checker for click event på trykkede knapper
-for (i = 0; i < allMenuLinks.length; i++) {
-    allMenuLinks[i].addEventListener('click', function(){
-
-    	//lykke - checker for active class og fjerne den. 
-		for (i = 0; i < allMenuLinks.length; i++) {
-	    	allMenuLinks[i].className = allMenuLinks[i].className.replace(" menu--active", "");
-		}
-		// giver den trykkede knap en active class
-	    this.className += " menu--active";
-    });
-
-}
 
 
 
@@ -46,3 +30,18 @@ likeIcon.addEventListener('click', function(){
 		likeIcon.src = "img/heart_line.svg";
 	}
 });
+
+
+
+
+// SessionStorage til at oprette en ny joke
+
+let jokeSubmit = document.querySelector(".jokeInput");
+let jokeInput = document.querySelector(".writeJoke");
+
+jokeSubmit.addEventListener('click', function(){
+	var jokeText = jokeInput.value;
+	sessionStorage.setItem("joke", jokeText);
+	console.log(sessionStorage);
+});
+console.log(sessionStorage);
