@@ -196,7 +196,15 @@ body{
 
 
 
-/*min profil follow*/
+/*min eller andres profil*/
+
+%profil_info {
+	margin-right: 7px;
+	margin-top: 15px;
+	text-align: center;
+	
+}
+/*boksen der indenholder alt info */
 .minprofil{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -211,7 +219,7 @@ body{
 	margin-top: 20px;
 	margin-bottom: 0;
 	margin-left: 15px;
-	color: white;
+	@extend %menu--active;
 }
 .Profilbillede{
 	grid-column: 3/3;
@@ -219,32 +227,28 @@ body{
 	margin-bottom: 10px;
 	
 }
+/*knap til at følge og unfollow*/
 .followbut{
 	grid-column: 9/12;
 	height: 30px;
 	background-color: #3F6648;
 	border: 0;
-	color:white;
+	@extend %menu--active;
 	margin: 10px;
 	
 }
+
+/* Her er hvor man kan se hvor mange jokes, følgere og likes man har */
 .antaljokes{
 	grid-column: 9/9;
-	margin-top: 15px;
-	text-align: center;
-	margin-right: 7px;
-	color:white;
-	
+	@extend %profil_info;
+	@extend %menu--active;
 }
 .follows{
-	margin-right: 7px;
-	margin-top: 15px;
-	text-align: center;
-	color:white;
+	@extend %profil_info;
+	@extend %menu--active;
 }
 .likes{
-	margin-right: 7px;
-	margin-top: 15px;
-	text-align: center;
-	color:white;
+	@extend %profil_info;
+	@extend %menu--active;
 }
