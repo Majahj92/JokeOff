@@ -1,119 +1,34 @@
-* {
-  margin: 0;
-  padding: 0; }
+/*
+Error: Invalid CSS after ".følgere": expected "{", was ""
+        on line 166 of C:\Users\Casper\Desktop\EASV\JokeOff\jokeOff comp\scss\style.scss
 
-body {
-  background-color: #FB6A6A;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); }
+161: 	
+162: }
+163: .følgere
 
-.divider {
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #FFFFFF;
-  margin: 20px 0; }
-
-.menu, .menu2 {
-  grid-column: span 12;
-  font-family: "Roboto";
-  font-weight: 400;
-  height: 45px;
-  background-color: #545454; }
-
-.menu__list, .menu2__list {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
-
-.menu__listItem, .menu2__listItem {
-  display: inline-block;
-  text-align: center;
-  line-height: 45px;
-  text-transform: uppercase;
-  color: #848484;
-  cursor: pointer; }
-
-.menu--active, .menu2--active {
-  color: white; }
-
-.menu__listItem {
-  box-sizing: border-box; }
-
-.menu--active {
-  box-shadow: inset 0 -5px 0 #0B0B0B; }
-
-.menu2--active {
-  background-color: #424242; }
-
-.jokeContainer {
-  min-height: 200px;
-  grid-column: span 12; }
-  .jokeContainer .jokeContainer__header {
-    width: 100%;
-    height: 50px;
-    background-color: #6188D7; }
-  .jokeContainer .jokeContainer__joke {
-    padding: 10px 10px;
-    min-height: 200px;
-    background-color: #7CA6FB;
-    white-space: pre-line;
-    font-size: 1.2rem;
-    font-family: 'Roboto';
-    color: #E5E5E5; }
-  .jokeContainer .jokeContainer__footer {
-    width: 100%;
-    height: 50px;
-    background-color: #6188D7; }
-  .jokeContainer .jokeContainer__avatar {
-    height: 30px;
-    padding: 10px 0 0 10px; }
-  .jokeContainer .jokeContainer__username {
-    display: inline-block;
-    vertical-align: top;
-    color: #E5E5E5;
-    line-height: 50px;
-    font-size: 1.1rem; }
-  .jokeContainer .jokeContainer__crown {
-    display: inline-block;
-    width: 20px;
-    vertical-align: top;
-    margin-top: 15px; }
-  .jokeContainer .jokeContainer__menu {
-    width: 25px;
-    float: right;
-    margin: 10px 25px 0 0; }
-  .jokeContainer .jokeContainer__like {
-    width: 30px;
-    padding: 10px 0 0 10px; }
-
-/*min profil follow*/
-.minprofil {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  height: 100px;
-  background-color: #E5DDCE;
-  grid-column: span 12; }
-
-.kontonavn {
-  grid-column: 2/6;
-  margin-top: 20px;
-  margin-bottom: 0; }
-
-.Profilbillede {
-  grid-column: 3/3;
-  width: 40px; }
-
-.follow {
-  grid-column: 8/11;
-  height: 30px;
-  margin-top: 10px;
-  background-color: #3F6648;
-  border: 0;
-  color: white; }
-
-.antaljokes {
-  grid-column: 6/7; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+C:\Users\Casper\Desktop\EASV\JokeOff\jokeOff comp\scss\style.scss:166
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \".følgere\": expected \"{\", was \"\"\A         on line 166 of C:\Users\Casper\Desktop\EASV\JokeOff\jokeOff comp\scss\style.scss\A \A 161: 	\A 162: }\A 163: .følgere"; }
