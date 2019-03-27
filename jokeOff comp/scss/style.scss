@@ -238,3 +238,14 @@ body{
 	@extend %profil_info;
 	@extend %menu--active;
 }
+
+/* ændre knappen med js */
+
+.followbut.following{
+	background-color: whitesmoke;
+	color: grey;
+}
+
+.followbut.following::after{
+content: "er";
+}

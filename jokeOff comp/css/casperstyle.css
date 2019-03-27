@@ -167,4 +167,12 @@ body {
 .antaljokes {
   grid-column: 9/9; }
 
+/* ændre knappen med js */
+.followbut.following {
+  background-color: whitesmoke;
+  color: grey; }
+
+.followbut.following::after {
+  content: "er"; }
+
 /*# sourceMappingURL=casperstyle.css.map */
