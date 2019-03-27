@@ -1,3 +1,5 @@
+/* Bundmenu */
+
 * {
     margin: 0;
     padding: 0; }
@@ -5,15 +7,16 @@
 ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
-    list-style: none
+    list-style: none;
+    width: 100%;
 }
   
 ul li img {
  height: 20px;
  display: block;
  margin: 0 auto;
- margin-top: 10px;
- margin-bottom: 10px;
+ margin-top: 15px;
+ margin-bottom: 15px;
 }
 
 .bundmenu__link {
@@ -21,3 +24,56 @@ display: block;
 margin: 0 auto;
 }
 
+.bundmenu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Notifikationer */ 
+
+.green {
+    background: beige;
+  }
+
+.box {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+  }
+
+  .box .like {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-left: 15px;
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  em  {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    font-style: normal;
+  }
+
+  img.profile {
+      width: 15px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  img.crown {
+      width: 18px;
+      display: block;
+      margin: 0 auto;
+  }
