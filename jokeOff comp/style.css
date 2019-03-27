@@ -33,7 +33,7 @@ margin: 0 auto;
 /* Notifikationer */ 
 
 .green {
-    background: beige;
+    background: #FFFEF7;
   }
 
 .box {
@@ -55,6 +55,7 @@ margin: 0 auto;
     font-weight: normal;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Heebo', sans-serif;
   }
 
   em  {
@@ -65,6 +66,9 @@ margin: 0 auto;
     font-weight: bold;
     display: inline-block;
     font-style: normal;
+    font-family: 'Roboto', sans-serif;
+
+
   }
 
   img.profile {
