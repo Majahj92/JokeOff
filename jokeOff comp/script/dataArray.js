@@ -1,3 +1,0 @@
-let jokes = [];
-
-let kategori = [];

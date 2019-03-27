@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -15,19 +16,19 @@ body {
   background-color: #FFFFFF;
   margin: 20px 0; }
 
-.menu, .menu2 {
+.menu2 {
   grid-column: span 12;
   font-family: "Roboto";
   font-weight: 400;
   height: 45px;
   background-color: #545454; }
 
-.menu__list, .menu2__list {
+.menu2__list {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
-.menu__listItem, .menu2__listItem {
+.menu2__listItem {
   display: inline-block;
   text-align: center;
   line-height: 45px;
@@ -35,14 +36,8 @@ body {
   color: #848484;
   cursor: pointer; }
 
-.menu--active, .menu2--active {
+.menu2--active, .kontonavn, .followbut, .antaljokes, .follows, .likes {
   color: white; }
-
-.menu__listItem {
-  box-sizing: border-box; }
-
-.menu--active {
-  box-shadow: inset 0 -5px 0 #0B0B0B; }
 
 .menu2--active {
   background-color: #424242; }
@@ -51,9 +46,15 @@ body {
   min-height: 200px;
   grid-column: span 12; }
   .jokeContainer .jokeContainer__header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 5fr;
+    justify-items: center;
+    align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #6188D7; }
+    background-color: #6188D7;
+    justify-content: middle;
+    text-decoration: none; }
   .jokeContainer .jokeContainer__joke {
     padding: 10px 10px 10px 15px;
     min-height: 200px;
@@ -63,30 +64,53 @@ body {
     font-family: 'Roboto';
     color: #E5E5E5; }
   .jokeContainer .jokeContainer__footer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 5fr;
     width: 100%;
     height: 50px;
     background-color: #6188D7; }
   .jokeContainer .jokeContainer__avatar {
     height: 30px;
-    padding: 10px 0 0 15px; }
+    margin-left: 15px; }
   .jokeContainer .jokeContainer__username {
     display: inline-block;
-    vertical-align: top;
     color: #E5E5E5;
-    line-height: 50px;
     font-size: 1.1rem; }
   .jokeContainer .jokeContainer__crown {
     display: inline-block;
-    width: 20px;
-    vertical-align: top;
-    margin-top: 15px; }
+    width: 20px; }
   .jokeContainer .jokeContainer__menu {
     width: 25px;
-    float: right;
-    margin: 10px 15px 0 0; }
+    justify-self: right;
+    margin-right: 15px; }
   .jokeContainer .jokeContainer__like {
     width: 30px;
-    padding: 10px 0 0 15px; }
+    margin-left: 15px; }
+
+.jokeContainer__popMenu {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding-top: 50%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  list-style: none; }
+  .jokeContainer__popMenu .jokeContainer__list {
+    width: 200px;
+    height: 50px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px; }
+
+.splashScreen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E52F2F; }
 
 .writeJoke {
   grid-column: 1/13;
@@ -106,7 +130,11 @@ body {
 
 .jokeInput {
   grid-column: 9/13;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-bottom: 25px; }
+
+.showJoke {
+  grid-column: span 12; }
 
 .searchForm {
   position: relative;
@@ -129,7 +157,13 @@ body {
     top: 40px;
     background-color: #FFFFFF; }
 
-/*min profil follow*/
+/*min eller andres profil*/
+.antaljokes, .follows, .likes {
+  margin-right: 7px;
+  margin-top: 15px;
+  text-align: center; }
+
+/*boksen der indenholder alt info */
 .minprofil {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -141,39 +175,23 @@ body {
   grid-column: 1/8;
   margin-top: 20px;
   margin-bottom: 0;
-  margin-left: 15px;
-  color: white; }
+  margin-left: 15px; }
 
 .Profilbillede {
   grid-column: 3/3;
   width: 40px;
   margin-bottom: 10px; }
 
+/*knap til at følge og unfollow*/
 .followbut {
   grid-column: 9/12;
   height: 30px;
   background-color: #3F6648;
   border: 0;
-  color: white;
   margin: 10px; }
 
+/* Her er hvor man kan se hvor mange jokes, følgere og likes man har */
 .antaljokes {
-  grid-column: 9/9;
-  margin-top: 15px;
-  text-align: center;
-  margin-right: 7px;
-  color: white; }
-
-.follows {
-  margin-right: 7px;
-  margin-top: 15px;
-  text-align: center;
-  color: white; }
-
-.likes {
-  margin-right: 7px;
-  margin-top: 15px;
-  text-align: center;
-  color: white; }
+  grid-column: 9/9; }
 
 /*# sourceMappingURL=style.css.map */
