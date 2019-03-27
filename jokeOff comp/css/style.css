@@ -15,7 +15,7 @@ body {
   background-color: #FFFFFF;
   margin: 20px 0; }
 
-.menu, .menu2 {
+.menu .li, .menu2 {
   grid-column: span 12;
   font-family: "Roboto";
   font-weight: 400;
@@ -51,9 +51,14 @@ body {
   min-height: 200px;
   grid-column: span 12; }
   .jokeContainer .jokeContainer__header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 5fr;
+    justify-items: center;
+    align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #6188D7; }
+    background-color: #6188D7;
+    justify-content: middle; }
   .jokeContainer .jokeContainer__joke {
     padding: 10px 10px 10px 15px;
     min-height: 200px;
@@ -63,30 +68,29 @@ body {
     font-family: 'Roboto';
     color: #E5E5E5; }
   .jokeContainer .jokeContainer__footer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 50px;
     background-color: #6188D7; }
   .jokeContainer .jokeContainer__avatar {
     height: 30px;
-    padding: 10px 0 0 15px; }
+    margin-left: 15px; }
   .jokeContainer .jokeContainer__username {
     display: inline-block;
-    vertical-align: top;
     color: #E5E5E5;
-    line-height: 50px;
     font-size: 1.1rem; }
   .jokeContainer .jokeContainer__crown {
     display: inline-block;
-    width: 20px;
-    vertical-align: top;
-    margin-top: 15px; }
+    width: 20px; }
   .jokeContainer .jokeContainer__menu {
     width: 25px;
-    float: right;
-    margin: 10px 15px 0 0; }
+    justify-self: right;
+    margin-right: 15px; }
   .jokeContainer .jokeContainer__like {
     width: 30px;
-    padding: 10px 0 0 15px; }
+    margin-left: 15px; }
 
 .writeJoke {
   grid-column: 1/13;
@@ -106,7 +110,11 @@ body {
 
 .jokeInput {
   grid-column: 9/13;
-  margin-right: 15px; }
+  margin-right: 15px;
+  margin-bottom: 25px; }
+
+.showJoke {
+  grid-column: span 12; }
 
 .searchForm {
   position: relative;
