@@ -182,4 +182,13 @@ body{
 	text-align: center;
 	color:white;
 }
+/* ændre knappen med js */
+.followbut.following {
+	background-color: whitesmoke;
+	color: grey; 
+}
+  
+.followbut.following::after {
+	content: "er"; 
+}
 
