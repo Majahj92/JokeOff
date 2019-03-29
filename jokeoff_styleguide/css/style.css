@@ -1,0 +1,158 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0; }
+
+pre {
+  white-space: pre-line;
+  margin: 0;
+  color: #49FE96;
+  background-color: #202020;
+  padding: 0 0 5px 5px; }
+
+h1 {
+  position: fixed;
+  font-weight: 900;
+  grid-column: span 2;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin: 0 0 50px 0;
+  line-height: 100px; }
+
+h4 {
+  display: inline-block;
+  margin-bottom: 0; }
+
+.displayContent {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  width: 700px;
+  margin-left: 50px;
+  min-height: 500px; }
+
+.tabContent {
+  display: none; }
+
+.tabContent h2 {
+  text-transform: capitalize; }
+
+.sideMenu {
+  position: fixed;
+  top: 150px;
+  width: 250px; }
+  .sideMenu ul {
+    list-style: none; }
+    .sideMenu ul li {
+      text-transform: capitalize;
+      font-size: 1.3em;
+      width: 100%;
+      border-bottom: 1px solid #8F8F8F;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: ease .3s; }
+      .sideMenu ul li:hover {
+        background-color: #EFEFEF; }
+
+.component {
+  width: 100%;
+  background-color: #F8F8F8;
+  border-radius: 5px; }
+
+.menu {
+  grid-column: span 12;
+  font-weight: 400;
+  height: 45px;
+  background-color: #545454; }
+
+.menu__list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 0; }
+
+.menu__listItem {
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #848484;
+  cursor: pointer; }
+
+.menu--active {
+  color: white;
+  background-color: #424242; }
+
+.bundmenu__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  width: 100%;
+  padding-left: 0; }
+
+.bundmenu__link img {
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.bundmenu__link {
+  display: block;
+  margin: 0 auto; }
+
+.bundmenu {
+  width: 100%;
+  background-color: white;
+  border: 1px solid black; }
+
+.jokeContainer__popMenu {
+  background-color: rgba(0, 0, 0, 0.4);
+  list-style: none; }
+  .jokeContainer__popMenu .jokeContainer__list {
+    width: 200px;
+    height: 50px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px; }
+
+.iconDisplay {
+  border-collapse: collapse;
+  width: 100%; }
+  .iconDisplay tr .iconDesc {
+    width: 100px; }
+  .iconDisplay tr th {
+    border: 1px solid #616161;
+    width: 5px;
+    padding: 5px 5px; }
+    .iconDisplay tr th img {
+      width: 25px; }
+
+.jokeInput {
+  border: none;
+  height: 35px;
+  background-color: white;
+  width: 100px;
+  border: 1px solid #9B9B9B; }
+
+.followbut {
+  width: 100px;
+  height: 35px;
+  background-color: #3F6648;
+  border: 0;
+  color: white; }
+
+/* ændre knappen med js */
+.followbut.following {
+  background-color: whitesmoke;
+  color: grey; }
+
+.followbut.following::after {
+  content: "er"; }
+
+.component .codeDesc {
+  border-bottom: 1px solid #B3B3B3; }
+
+/*# sourceMappingURL=style.css.map */

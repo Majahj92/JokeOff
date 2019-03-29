@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JokeOff styleguide</title>
+</head>
+
+<body>
+<h1>JokeOff styleguide</h1>
+<nav class="sideMenu">
+	<ul>
+		<li class="tabs typography">typography</li>
+		<li class="tabs color">color</li>
+		<li class="tabs buttons">buttons</li>
+		<li class="tabs grids">grids</li>
+		<li class="tabs navigation">navigation</li>
+		<li class="tabs icons">icons</li>
+	</ul>
+
+</nav>
+
+
+<section class="displayContent">
+	<section id="typography" class="tabContent">
+		<h2>typography</h2>
+
+
+	</section>
+	<section id="color" class="tabContent">
+		<h2>color</h2>
+
+
+	</section>
+	<section id="buttons" class="tabContent">
+		<h2>buttons</h2>
+		<p>Post ny joke</p>
+		<input class="jokeInput" type="submit" value="Post">
+		
+		<p>Følg en person</p>
+		<button class="followbut"> Følg</button>
+
+	</section>
+	<section id="grids" class="tabContent">
+		<h2>grids</h2>
+		<p></p>
+		<article class="component">
+			<h4>&ltbody></h4>
+			<pre>
+				 	
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+			</pre>
+			<p class="codeDesc">Main grid for hele strukturen</p>
+		</article>
+
+		<article class="component">
+			<h4>.menu__list</h4>
+			<pre>
+
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+			</pre>
+			<p class="codeDesc">Top menu - placering af navigationstabs</p>
+		</article>
+
+		<article class="component">
+			<h4>.jokeContainer__header</h4>
+			<pre>
+				
+				display: grid;
+				grid-template-columns:1fr 3fr 1fr 5fr;
+				justify-items:center;
+				align-items: center;
+			</pre>
+			<p class="codeDesc">Post header bar - placering af profil elementer</p>
+		</article>
+
+		
+		<article class="component">
+			<h4>.jokeContainer__footer</h4>
+			<pre>
+
+				display: grid;
+				grid-template-columns:1fr 1fr 5fr;
+				align-items:center;
+			</pre>
+			<p class="codeDesc">Post footer bar - placering af like og profilmenu</p>
+		</article>
+
+		<article class="component">
+			<h4>.searchForm</h4>
+			<pre>
+
+				display: grid;
+				grid-template-columns: 1fr 9fr;
+			</pre>
+			<p class="codeDesc">Søgebar - ikon iforhold til input felt</p>
+		</article>
+
+		<article class="component">
+			<h4>.minprofil</h4>
+			<pre>
+
+				display: grid;
+    			grid-template-columns: repeat(12, 1fr);
+			</pre>
+			<p class="codeDesc">profil - opsætning af profil information</p>
+		</article>
+
+		<article class="component">
+			<h4>.bundmenu__list</h4>
+			<pre>
+
+				display: grid;
+ 				grid-template-columns: repeat(5, 1fr);
+			</pre>
+			<p class="codeDesc">Fixed bundmenu - placering af navigationsikoner</p>
+		</article>
+
+		<article class="component">
+			<h4>.box</h4>
+			<pre>
+
+				display: grid;
+				grid-template-columns: 2fr 5fr 2fr;
+				align-items: center;
+			</pre>
+			<p class="codeDesc">Fixed bundmenu - placering af navigationsikoner</p>
+		</article>
+		
+		
+	</section>
+	<section id="navigation" class="tabContent">
+		<h2>navigation</h2>
+		<article class="component">
+			<h4>Top menu - main indholds navigation</h4>
+			<p>Aktive links har anden baggrundsfarve</p>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__listItem menu--active">Jokes</li>
+					<li class="menu__listItem">Top</li>
+					<li class="menu__listItem">Følger</li>
+				</ul>                                      
+			</nav>
+		</article>
+
+
+		<article class="component">
+			<h4>Bund menu - fixed</h4>
+			<p>Menuen er fixed i bunden, navigation til bruger interaktioner</p>
+			<footer class="bundmenu">
+		        <ul class="bundmenu__list">
+		           <li class="bundmenu__listItem"><a class="bundmenu__link" href="index.html"><img src="img/home_fill.svg" alt="home"></li></a>
+		           <li class="bundmenu__listItem"><a class="bundmenu__link" href="search.html"><img src="img/search_line2.svg" alt="search"></li></a>
+		           <li class="bundmenu__listItem"><a class="bundmenu__link" href="opret_joke.html"><img src="img/tester3.png" alt="add"></li></a>
+		           <li class="bundmenu__listItem"><a class="bundmenu__link" href="notifikationer.html"><img src="img/notification_line.svg" alt="notifications"></li></a>
+		           <li class="bundmenu__listItem"><a class="bundmenu__link" href="profil.html"><img src="img/profile_line5.png" alt="profile"></li></a>
+		        </ul>
+			</footer>
+		</article>
+
+		<article class="component">
+			<h4>Pop up menu - profil</h4>
+			<p>Lille menu for hvert indlæg</p>
+			<ul class="jokeContainer__popMenu">
+				<li class="jokeContainer__list">Anmeld</li>
+				<li class="jokeContainer__list">Bloker</li>
+				<li class="jokeContainer__list">Del</li>
+				<li class="jokeContainer__list">Følg</li>
+			</ul>
+		</article>
+
+	</section>
+	<section id="icons" class="tabContent">
+		<h2>icons</h2>
+		<table class="iconDisplay">
+			<tr>
+				<th class="iconDesc">Bundmenu ikoner - ikke aktivt</th>
+				<th><img src="img/home_line2.svg" alt=""></th>
+				<th><img src="img/search_line2.svg" alt=""></th>
+				<th><img src="img/tester3.png" alt=""></th>
+				<th><img src="img/notification_line.svg" alt=""></th>
+				<th><img src="img/profile_line5.png" alt=""></th>
+			</tr>
+			<tr>
+				<th class="iconDesc">Bundmenu ikoner - aktivt</th>
+				<th><img src="img/home_fill.svg" alt=""></th>
+				<th><img src="img/search_fill.svg" alt=""></th>
+				<th><img src="img/post_fill.svg" alt=""></th>
+				<th><img src="img/notification_fill.svg" alt=""></th>
+				<th><img src="img/profile_fill.svg" alt=""></th>
+			</tr>
+			<tr>
+				<th>ikoner på et post</th>
+				<th>
+					<img src="img/heart_line.svg" alt="">
+					<p>like - ikke liked</p>
+				</th>
+				<th>
+					<img src="img/heart_colored.svg" alt="">
+					<p>like - liked</p>
+				</th>
+				<th>
+					<img src="img/avatar.svg" alt="">
+					<p>profil avatar</p>
+				</th>
+				<th>
+					<img src="img/crown.svg" alt="">
+					<p>Joke master</p>
+				</th>
+				<th>
+					<img src="img/pop_menu.svg" alt="">
+					<p>Post menu</p>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Ikoner på notifikation
+				</th>
+				<th>
+					<img src="img/heart_colored.svg" alt="">
+					<p>Nogle har liked</p>
+				</th>
+				<th>
+					<img src="img/crown.svg" alt="">
+					<p>Blevet Joke master</p>
+				</th>
+				<th>
+					<img src="img/Gold_Star.svg.png" alt="">
+					<p>Blevet top joke</p>
+				</th>
+			</tr>
+		</table>
+	</section>
+
+
+</section>
+<script src="script/script.js"></script>
+</body>
+</html>
